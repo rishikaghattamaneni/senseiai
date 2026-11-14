@@ -198,7 +198,7 @@ Schema:
           ],
           generationConfig: {
             temperature: 0.6,
-            maxOutputTokens: 2500,
+            maxOutputTokens: 8192, thinkingConfig: { thinkingBudget: 0 },
             responseMimeType: 'application/json'
           }
         })
@@ -374,6 +374,7 @@ Format using clean Markdown with bold keywords and bullet points.`;
 }
 
 export const geminiService = new GeminiService();
+
 
 
 
