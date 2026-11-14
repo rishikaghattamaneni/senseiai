@@ -181,7 +181,7 @@ Schema:
   ]
 }`;
 
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${apiKey}`;
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${apiKey}`;
 
     try {
       const response = await fetch(endpoint, {
@@ -261,7 +261,7 @@ Instructions:
 3. Conclude by asking if they feel comfortable moving forward or want another example.
 Keep the entire response under 100 words so it can be cleanly read aloud without overwhelming the student.`;
 
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${apiKey}`;
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${apiKey}`;
 
     try {
       const response = await fetch(endpoint, {
@@ -324,7 +324,7 @@ Please generate a compassionate, high-yield "Targeted Gap-Filler Mini-Lesson":
 3. Give them 1 memorable rule of thumb to remember for future tests.
 Format using clean Markdown with bold keywords and bullet points.`;
 
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${apiKey}`;
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${apiKey}`;
 
     try {
       const response = await fetch(endpoint, {
@@ -374,4 +374,5 @@ Format using clean Markdown with bold keywords and bullet points.`;
 }
 
 export const geminiService = new GeminiService();
+
 
