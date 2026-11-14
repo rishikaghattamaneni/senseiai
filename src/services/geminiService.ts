@@ -204,9 +204,9 @@ Schema:
         })
       });
 
-      if (!response.ok) {
+      if (response.ok) break; if (m === models[models.length - 1]) {
         const errText = await response.text();
-        throw new Error(`Gemini API error (${response.status}): ${errText}`);
+        throw new Error(`Gemini API error (${response.status}): ${errText}`); } }
       }
 
       const data = await response.json();
@@ -276,7 +276,7 @@ Keep the entire response under 100 words so it can be cleanly read aloud without
         })
       });
 
-      if (!response.ok) {
+      if (response.ok) break; if (m === models[models.length - 1]) {
         throw new Error(`Gemini API error: ${response.status}`);
       }
 
@@ -374,6 +374,7 @@ Format using clean Markdown with bold keywords and bullet points.`;
 }
 
 export const geminiService = new GeminiService();
+
 
 
 
