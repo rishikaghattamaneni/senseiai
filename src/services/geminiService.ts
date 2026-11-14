@@ -181,10 +181,7 @@ Schema:
   ]
 }`;
 
-    const models = ["gemini-3.5-flash-lite", "gemini-3.8-flash", "gemini-3.5-flash"]; let response: any; for (const m of models) { const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${apiKey}`;
-
-    try {
-      const response = await fetch(endpoint, {
+    const models = ["gemini-3.5-flash-lite", "gemini-3.8-flash", "gemini-3.5-flash"]; let response: any; try { for (const m of models) { const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${apiKey}`; response = await fetch(endpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -258,10 +255,7 @@ Instructions:
 3. Conclude by asking if they feel comfortable moving forward or want another example.
 Keep the entire response under 100 words so it can be cleanly read aloud without overwhelming the student.`;
 
-    const models = ["gemini-3.5-flash-lite", "gemini-3.8-flash", "gemini-3.5-flash"]; let response: any; for (const m of models) { const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${apiKey}`;
-
-    try {
-      const response = await fetch(endpoint, {
+    const models = ["gemini-3.5-flash-lite", "gemini-3.8-flash", "gemini-3.5-flash"]; let response: any; try { for (const m of models) { const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${apiKey}`; response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -321,10 +315,7 @@ Please generate a compassionate, high-yield "Targeted Gap-Filler Mini-Lesson":
 3. Give them 1 memorable rule of thumb to remember for future tests.
 Format using clean Markdown with bold keywords and bullet points.`;
 
-    const models = ["gemini-3.5-flash-lite", "gemini-3.8-flash", "gemini-3.5-flash"]; let response: any; for (const m of models) { const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${apiKey}`;
-
-    try {
-      const response = await fetch(endpoint, {
+    const models = ["gemini-3.5-flash-lite", "gemini-3.8-flash", "gemini-3.5-flash"]; let response: any; try { for (const m of models) { const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${apiKey}`; response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
