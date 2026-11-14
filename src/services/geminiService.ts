@@ -1,4 +1,4 @@
-import { StudyKit, TutorMode, QuizQuestion } from '../types';
+async function fetchWithFallback(apiKey: string, payload: any) { const models = ["gemini-3.5-flash", "gemini-3.8-flash", "gemini-3.5-flash-lite", "gemini-3.0-flash"]; let lastRes: any; for (const m of models) { const res = await fetch(`https://googleapis.com{m}:generateContent?key=${apiKey}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }); if (res.ok) return res; lastRes = res; } return lastRes; }`n`nimport { StudyKit, TutorMode, QuizQuestion } from '../types';
 import { SAMPLE_STUDY_KITS } from '../data/sampleTopics';
 
 export class GeminiService {
@@ -181,7 +181,7 @@ Schema:
   ]
 }`;
 
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${apiKey}`;
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${apiKey}`;
 
     try {
       const response = await fetch(endpoint, {
@@ -198,7 +198,7 @@ Schema:
           ],
           generationConfig: {
             temperature: 0.6,
-            maxOutputTokens: 8192, thinkingConfig: { thinkingBudget: 0 },
+            maxOutputTokens: 8192,
             responseMimeType: 'application/json'
           }
         })
@@ -261,7 +261,7 @@ Instructions:
 3. Conclude by asking if they feel comfortable moving forward or want another example.
 Keep the entire response under 100 words so it can be cleanly read aloud without overwhelming the student.`;
 
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${apiKey}`;
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${apiKey}`;
 
     try {
       const response = await fetch(endpoint, {
@@ -324,7 +324,7 @@ Please generate a compassionate, high-yield "Targeted Gap-Filler Mini-Lesson":
 3. Give them 1 memorable rule of thumb to remember for future tests.
 Format using clean Markdown with bold keywords and bullet points.`;
 
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${apiKey}`;
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${apiKey}`;
 
     try {
       const response = await fetch(endpoint, {
@@ -374,8 +374,6 @@ Format using clean Markdown with bold keywords and bullet points.`;
 }
 
 export const geminiService = new GeminiService();
-
-
 
 
 
