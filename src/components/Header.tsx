@@ -98,7 +98,7 @@ export const Header: React.FC<HeaderProps> = ({
                 Sensei<span className="text-indigo-600 dark:text-indigo-400">AI</span>
               </h1>
               <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-800 dark:bg-indigo-900/60 dark:text-indigo-200 border border-indigo-200 dark:border-indigo-700">
-                Gemini 2.5 Flash
+                Gemini 3.5 Flash
               </span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 font-medium hidden sm:block">
@@ -198,4 +198,5 @@ export const Header: React.FC<HeaderProps> = ({
     </header>
   );
 };
+
 

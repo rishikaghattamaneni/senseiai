@@ -121,3 +121,4 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({
   );
 };
 
+

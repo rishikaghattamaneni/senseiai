@@ -21,7 +21,7 @@ export class GeminiService {
     }
   }
 
-  // Generate full Multi-Sensory Study Kit via Gemini 2.5 Flash
+  // Generate full Multi-Sensory Study Kit via Gemini 3.5 Flash
   public async generateStudyKit(topic: string, mode: TutorMode): Promise<StudyKit> {
     const apiKey = this.getApiKey();
 
@@ -374,5 +374,6 @@ Format using clean Markdown with bold keywords and bullet points.`;
 }
 
 export const geminiService = new GeminiService();
+
 
 

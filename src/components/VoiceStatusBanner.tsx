@@ -54,7 +54,7 @@ export const VoiceStatusBanner: React.FC<VoiceStatusBannerProps> = ({
         return (
           <div className="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-bold">
             <Brain className="w-4 h-4 animate-spin text-indigo-500" aria-hidden="true" />
-            <span>SenseiAI Thinking (Gemini 2.5 Flash)...</span>
+            <span>SenseiAI Thinking (Gemini 3.5 Flash)...</span>
           </div>
         );
       case 'speaking':
@@ -216,4 +216,5 @@ export const VoiceStatusBanner: React.FC<VoiceStatusBannerProps> = ({
     </section>
   );
 };
+
 

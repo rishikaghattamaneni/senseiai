@@ -692,7 +692,7 @@ export default function App() {
       {/* Accessible Footer */}
       <footer className="border-t border-slate-200 dark:border-slate-800 py-4 px-6 text-center text-xs text-slate-500 dark:text-slate-400">
         <p>
-          SenseiAI • Inclusive Multi-Sensory AI Personal Tutor • Built with Next/React & Google Gemini 2.5 Flash • Press <kbd className="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 font-mono text-[10px]">Space</kbd> to talk, <kbd className="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 font-mono text-[10px]">Esc</kbd> to stop audio.
+          SenseiAI • Inclusive Multi-Sensory AI Personal Tutor • Built with Next/React & Google Gemini 3.5 Flash • Press <kbd className="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 font-mono text-[10px]">Space</kbd> to talk, <kbd className="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 font-mono text-[10px]">Esc</kbd> to stop audio.
         </p>
       </footer>
 
@@ -721,4 +721,5 @@ export default function App() {
     </div>
   );
 }
+
 
