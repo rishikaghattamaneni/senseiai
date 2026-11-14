@@ -1,4 +1,5 @@
-async function fetchWithFallback(apiKey: string, payload: any) { const models = ["gemini-3.5-flash", "gemini-3.8-flash", "gemini-3.5-flash-lite", "gemini-3.0-flash"]; let lastRes: any; for (const m of models) { const res = await fetch(`https://googleapis.com{m}:generateContent?key=${apiKey}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }); if (res.ok) return res; lastRes = res; } return lastRes; }`n`nimport { StudyKit, TutorMode, QuizQuestion } from '../types';
+async function fetchWithFallback(apiKey: string, payload: any) { const models = ["gemini-3.5-flash", "gemini-3.8-flash", "gemini-3.5-flash-lite", "gemini-3.0-flash"]; let lastRes: any; for (const m of models) { const res = await fetch("https://://googleapis.com/v1beta/models/" + m + ":generateContent?key=" + apiKey, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }); if (res.ok) return res; lastRes = res; } return lastRes; }
+import { StudyKit, TutorMode, QuizQuestion } from '../types';
 import { SAMPLE_STUDY_KITS } from '../data/sampleTopics';
 
 export class GeminiService {
