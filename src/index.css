@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  /* Accessibility focus styles: prominent high-contrast outlines */
+  :focus-visible {
+    outline: 3px solid #4f46e5;
+    outline-offset: 3px;
+  }
+}
+
+/* Contrast Themes */
+.theme-high-contrast-black {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+.theme-high-contrast-black * {
+  border-color: #ffffff !important;
+}
+.theme-high-contrast-black button,
+.theme-high-contrast-black input {
+  outline-color: #ffff00 !important;
+}
+
+.theme-yellow-black {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+}
+.theme-yellow-black * {
+  border-color: #ffff00 !important;
+}
+.theme-yellow-black button,
+.theme-yellow-black input {
+  color: #ffff00 !important;
+}
+
+.theme-cream-dark {
+  background-color: #1a1714 !important;
+  color: #f5eedc !important;
+}
+
+/* Text Size scaling utilities */
+.text-scale-large {
+  font-size: 115% !important;
+}
+.text-scale-extra-large {
+  font-size: 130% !important;
+}
+
+/* Flashcard 3D flip effect */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
