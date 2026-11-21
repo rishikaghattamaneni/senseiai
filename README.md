@@ -1,7 +1,7 @@
 🎓 SenseiAI — Inclusive Multi-Sensory AI Personal Tutor
 
 > **Live Demo:** https://senseiai-six.vercel.app/
-> **Role:** Product Manager & Builder | **Tech Stack:** React, TypeScript, Tailwind CSS, Google Gemini 2.5 Flash, Web Speech API
+> **Role:** Product Manager & Builder | **Tech Stack:** React, TypeScript, Tailwind CSS, Google Gemini 3.5 Flash, Web Speech API
 
 🧩 Problem Statement
 Traditional digital study tools rely on dense, one-size-fits-all text that creates barriers for:
